@@ -14,4 +14,7 @@ this.userid=userid;
 String getusername() {
    return username;
 }
+    String getuserDetails() {
+        return "Username: " + username + ", UserID: " + userid + ", Email: " + email;
+    }
 }

@@ -12,6 +12,13 @@ public class MainForAssignment {
         Customer c= new Customer(111,"youssef","youssefmohamed@gmail.com");
         Admin a=new Admin(122,"Admin youssef","Adminyoussefmohamed@gmail.com");
         c.placeOrder(p,4);
+        c.placeOrder(p);
         a.updateProduct(p,40,10);
+
+        Customer c1=new Customer(11,"youssef","youssef16");
+        System.out.println(c1.getuserDetails());
+        Payment creditCardPayment = new CreditCardPayment();
+        creditCardPayment.processPayment();
+        creditCardPayment.validateCard();
     }
 }
